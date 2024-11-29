@@ -1,2 +1,2 @@
 # angular
- My Angular projects for study and personal use
+ My angular projects for study and personal use

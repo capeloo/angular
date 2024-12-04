@@ -8,7 +8,7 @@ import { CommonModule } from '@angular/common';
   imports: [RouterOutlet, CommonModule],
   template: `
     <router-outlet />
-    <div *ngFor="let frog of frogs">
+    <div>
       <p>{{ frogs }}</p>
     </div>
   `,

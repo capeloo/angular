@@ -1,0 +1,64 @@
+header {
+    width: 100%;
+    height: 10%;
+    background-color: whitesmoke;
+    box-shadow: 2px 5px 10px rgb(192, 192, 192);
+    display: flex;
+    justify-content: space-between;
+}
+
+header>form {
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+button.primary {
+    margin: auto 10px auto 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+    color: whitesmoke;
+    background-color: #8DC642;
+    padding: 0.15rem;
+    width: 6rem;
+    text-align: center;
+    border-radius: 0.25rem;
+    box-shadow: 2px 2px 2px rgb(192, 192, 192);
+    border: 2px solid #8DC642;
+}
+
+button.primary:hover {
+    transition: 0.25s;
+    background-color: whitesmoke;
+    color: #8DC642;
+}
+
+header>form>input {
+    padding: 0.25rem;
+    width: 17rem;
+    height: 1.35rem;
+    margin: auto 10px auto 10px;
+    border: 2px solid whitesmoke;
+    border-radius: 0.25rem;
+}
+
+header>form>input:focus {
+    border: 2px solid #8DC642;
+    outline: none;
+
+}
+
+header>a>img {
+    width: 150px;
+}
+
+.results {
+    background-color: whitesmoke;
+    display: grid;
+    column-gap: 14px;
+    row-gap: 14px;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 400px));
+    margin-top: 2rem;
+    justify-content: space-around;
+  }

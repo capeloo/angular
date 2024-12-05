@@ -1,6 +1,6 @@
 import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
-import { Observable } from "rxjs";
+import { Frogs } from "./frogs.model";
 
 @Injectable({
     providedIn: 'root',
@@ -11,7 +11,8 @@ export class FrogsService {
 
     constructor(private http: HttpClient){}
 
-    getFrogs(): Observable<string[]> {
-        return this.http.get<string[]>(this.apiUrl);
+    async getFrogs(): Promise<Frogs[]> {
+        const data = await fetch(this.apiUrl);
+        return(await data.json()) ?? [];
     }
 }

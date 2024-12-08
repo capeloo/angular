@@ -18,11 +18,17 @@ import { FrogsService } from '../frogs.service';
         <button class="primary" type="button">search</button>
       </form>
     </header>
-    <main class="results">
-      <app-cards 
-        *ngFor="let frog of frogs" 
-        [frog]="frog"
-      ></app-cards>
+    <main >
+      <h1>
+        Sapos do momento
+      </h1>
+      <section class="results">
+        <app-cards 
+          *ngFor="let frog of frogs" 
+          [frog]="frog"
+        ></app-cards>
+      </section>
+      
     </main>
   `,
   styleUrl: './home.component.css'

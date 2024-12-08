@@ -1,12 +1,13 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Frogs } from '../frogs.model';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-cards',
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   template: `
-    <section class="listing">
+    <section [routerLink]="['/details', frog.id]" class="listing">
       <img
         class="listing-photo"
         [src]="frog.photo" 
